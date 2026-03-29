@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -436,41 +437,126 @@
       </div>
       <div class="hero-image">
         <div class="avatar">
-          <!-- modern placeholder avatar - abstract illustration style -->
           <img src="https://ui-avatars.com/api/?background=c2410c&color=fff&bold=true&rounded=true&size=300&fontsize=0.6&name=Zach+Q" alt="Zach Qi avatar">
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Work Section -->
+  <section id="work">
+    <div class="container">
+      <h2>Selected Work</h2>
+      <p class="section-subtitle">A few recent projects I've had the pleasure of bringing to life.</p>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img">
+            <i class="fas fa-globe"></i>
+          </div>
+          <div class="project-info">
+            <h3>Flux Dashboard</h3>
+            <p>Real-time analytics dashboard for creative agencies.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">D3.js</span>
+              <span class="tag">Tailwind</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <div class="project-info">
+            <h3>Bloom App</h3>
+            <p>Mindfulness app with guided journaling features.</p>
+            <div class="project-tags">
+              <span class="tag">React Native</span>
+              <span class="tag">Firebase</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <div class="project-info">
+            <h3>Artisan Market</h3>
+            <p>E-commerce platform for local makers.</p>
+            <div class="project-tags">
+              <span class="tag">Next.js</span>
+              <span class="tag">Stripe</span>
+              <span class="tag">Sanity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- Contact + social proof -->
+  <!-- Skills Section -->
+  <section id="skills" class="bg-soft">
+    <div class="container">
+      <h2>Skills & Tools</h2>
+      <p class="section-subtitle">Technologies I work with to bring ideas to life.</p>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Frontend</h3>
+          <div class="skill-items">
+            <span class="skill-badge">React</span>
+            <span class="skill-badge">Vue</span>
+            <span class="skill-badge">TypeScript</span>
+            <span class="skill-badge">Tailwind</span>
+            <span class="skill-badge">Framer Motion</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-server"></i> Backend</h3>
+          <div class="skill-items">
+            <span class="skill-badge">Node.js</span>
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">PostgreSQL</span>
+            <span class="skill-badge">MongoDB</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-pencil-ruler"></i> Design</h3>
+          <div class="skill-items">
+            <span class="skill-badge">Figma</span>
+            <span class="skill-badge">Adobe XD</span>
+            <span class="skill-badge">Illustrator</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
   <section id="contact" class="bg-soft">
     <div class="container">
       <div class="contact-card">
         <i class="fas fa-comment-dots" style="font-size: 2.5rem; color: #c2410c; margin-bottom: 1rem; display: inline-block;"></i>
-        <h2 style="margin-bottom: 0.5rem;">Let’s work together</h2>
-        <p style="max-width: 500px; margin: 0 auto 1rem auto;">Got a project in mind or just want to say hi? I’ll get back to you within 24 hours.</p>
+        <h2 style="margin-bottom: 0.5rem;">Let's work together</h2>
+        <p style="max-width: 500px; margin: 0 auto 1rem auto;">Got a project in mind or just want to say hi? I'll get back to you within 24 hours.</p>
         <div class="contact-icons">
-          <a href="#" class="contact-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="mailto:zachqi.zheng@gmail.com" class="contact-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
           <a href="#" class="contact-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          
+          <a href="#" class="contact-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
         </div>
-        <a href="mailto:zachqi.zheng@gmail.com" class="btn btn-primary" style="margin-top: 0.5rem;"><i class="fas fa-paper-plane"></i>zachqi.zheng@gmail.com</a>
+        <a href="mailto:zachqi.zheng@gmail.com" class="btn btn-primary" style="margin-top: 0.5rem;"><i class="fas fa-paper-plane"></i> zachqi.zheng@gmail.com</a>
       </div>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>© 2026 Alex Morgan — Designed & built with <i class="fas fa-heart" style="color: #c2410c;"></i> for the creative web.</p>
+      <p>© 2026 Zach Qi — Designed & built with <i class="fas fa-heart" style="color: #c2410c;"></i> for the creative web.</p>
     </div>
   </footer>
 
-  <!-- smooth scroll for internal links (optional but nice) -->
+  <!-- smooth scroll for internal links -->
   <script>
     (function() {
-      // smooth scroll for anchor links
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
           const href = this.getAttribute('href');
@@ -479,13 +565,11 @@
           if (target) {
             e.preventDefault();
             target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            // update URL hash without jump
             history.pushState(null, null, href);
           }
         });
       });
-      // Add a tiny interactive console greeting
-      console.log("✨ Personal portfolio — feel free to connect!");
+      console.log("✨ Zach Qi portfolio — feel free to connect!");
     })();
   </script>
 </body>
